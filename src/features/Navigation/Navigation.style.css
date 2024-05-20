@@ -33,6 +33,10 @@
   font-size: 13px;
 }
 
+.navigation-links a:hover {
+  color: red;
+}
+
 .shopping-cart-container {
   width: 20%;
   display: flex;
