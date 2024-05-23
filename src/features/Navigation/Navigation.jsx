@@ -1,4 +1,4 @@
-import "./Navigation.style.css";
+import "./navigation.style.css";
 import { Link, useNavigate } from "react-router-dom";
 import ShoppingCart from "../../components/ShoppingCart/ShoppingCart";
 import EcommerceLogo from "../../components/EcommerceLogo/EcommerceLogo";

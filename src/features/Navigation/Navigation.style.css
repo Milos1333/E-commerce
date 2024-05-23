@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(0, 38, 33);
+  position: fixed;
 }
 
 .navigation-logo {
@@ -19,6 +20,7 @@
   color: rgb(0, 255, 145);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
+  margin-bottom: 2px;
 }
 
 .navigation-links {
@@ -82,7 +84,6 @@
 @media screen and (max-width: 600px) {
   .navigation-logo h1 {
     font-size: 13px;
-    margin-bottom: 2px;
   }
   .navigation-links {
     width: 60%;
