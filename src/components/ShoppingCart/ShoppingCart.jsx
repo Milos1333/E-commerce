@@ -1,9 +1,9 @@
-import ShoppingCartIcon from "../../assets/shopping-cart.png";
+import { ShoppingCartImage } from "../../assets/index";
 
 const ShoppingCart = () => {
   return (
     <>
-      <img src={ShoppingCartIcon} width="20px" />
+      <ShoppingCartImage />
     </>
   );
 };
