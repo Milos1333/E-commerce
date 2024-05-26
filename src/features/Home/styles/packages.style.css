@@ -1,0 +1,107 @@
+.packages-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 255, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.packages-header {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.packages-header h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+}
+
+.packages-main {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.package {
+  width: 230px;
+  padding: 0 20px;
+  background-color: rgb(191, 255, 205);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  text-align: center;
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.package:hover {
+  background-color: rgb(0, 38, 33);
+  color: white;
+  transform: scale(1.03);
+}
+
+.package button {
+  font-size: 12px;
+  padding: 7px 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.package:hover button {
+  background-color: white !important;
+  color: black !important;
+  transition: 1s ease;
+}
+
+.package:hover button:hover {
+  background-color: rgb(221, 255, 237) !important;
+  transition: 0.1 ease;
+}
+
+.package h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  transition: 1s ease;
+}
+
+.package:hover h2 {
+  color: rgb(131, 255, 131);
+}
+
+.package h3 {
+  padding: 0;
+  margin: 0;
+  transition: 1s ease;
+  font-size: 25px;
+}
+
+.package:hover h3 {
+  color: rgb(131, 255, 131);
+}
+
+.package img {
+  position: absolute;
+  top: -60px;
+}
+
+.package:first-child img {
+  width: 203px;
+}
+
+.package p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}

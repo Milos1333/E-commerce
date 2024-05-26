@@ -1,5 +1,3 @@
-import "./ecommerceLogo.style.css";
-
 const EcommerceLogo = ({ handleNavigate }) => {
   return (
     <>

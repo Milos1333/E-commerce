@@ -48,11 +48,6 @@
   padding: 8px 30px;
   margin-top: 25px;
   font-weight: bold;
-  transition: 0.3s ease-in-out;
-}
-
-.fresh-content button:hover {
-  background-color: rgb(19, 61, 36) !important;
 }
 
 .fresh-image {
@@ -64,6 +59,12 @@
 
 .fresh-image img {
   width: 370px;
+  transition: 2s ease;
+  z-index: 1;
+}
+
+.fresh-image:hover img {
+  transform: scale(1.05);
 }
 
 .fresh-brands {

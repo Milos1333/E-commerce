@@ -1,0 +1,51 @@
+.innovative-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 255, 246);
+  display: flex;
+}
+
+.innovative-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innovative-main {
+  height: 50%;
+  align-self: center;
+  width: 70%;
+}
+
+.innovative-main h2 {
+  font-size: 35px;
+}
+
+.innovative-main button {
+  background-color: rgb(0, 38, 33);
+  color: white;
+  font-size: 13px;
+  padding: 8px 30px;
+  border-radius: 0;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.innovative-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 255, 230);
+  transition: 1s ease-in-out;
+}
+
+.innovative-right img {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.innovative-right:hover {
+  background-color: rgb(0, 38, 33);
+}

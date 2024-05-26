@@ -27,7 +27,7 @@ const Presentations = () => {
   return (
     <div className="presentations-container">
       <div className="presentations-header">
-        <h2>Beautiful presentations made easy</h2>
+        <h2>Beautiful presentations made easy.</h2>
         <p>
           Dive into mesmerizing soundscapes with our advanced headphones,
           offering rich audio quality from highs to lows for a captivating
