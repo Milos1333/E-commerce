@@ -8,19 +8,19 @@ const Packages = () => {
   const headphones = [
     {
       title: "Simple",
-      description: "Security Device with Monthly Service",
+      description: "Basic sound quality, essential features.",
       price: "$19",
       image: headphoneSimple,
     },
     {
       title: "Standard",
-      description: "Security Device with Monthly Service",
+      description: "Enhanced audio, balanced performance.",
       price: "$29",
       image: headphoneStandard,
     },
     {
       title: "Best Offer",
-      description: "Security Device with Monthly Service",
+      description: "Premium sound, best value deal.",
       price: "$39",
       image: headphoneBestOffer,
     },
@@ -35,7 +35,9 @@ const Packages = () => {
           <div className="package">
             <img src={headphone.image} width="165px" />
             <h3>{headphone.title}</h3>
-            <p>{headphone.description}</p>
+            <div className="title-headphone">
+              <p>{headphone.description}</p>
+            </div>
             <h2>{headphone.price}</h2>
             <Button
               buttonText="Shop now"
