@@ -1,3 +1,5 @@
+import "./button.style.css";
+
 const Button = ({ handleButton, backgroundColor, color, buttonText }) => {
   return (
     <>

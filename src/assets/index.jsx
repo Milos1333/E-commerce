@@ -1,6 +1,7 @@
 import consumerReportsLogo from "./consumerReportsLogo.png";
 import endagdetLogo from "./endagdetLogo.png";
-import headphone from "./headphone.png";
+import headphone1 from "./headphone1.png";
+import headphone2 from "./headphone2.png";
 import logoFavicon from "./logoFavicon.png";
 import pioneerLogo from "./pioneerLogo.png";
 import shoppingCart from "./shoppingCart.png";
@@ -15,8 +16,12 @@ const EndagdetLogo = () => {
   return <img src={endagdetLogo} alt="Endagdet Logo" />;
 };
 
-const HeadphoneImage = () => {
-  return <img src={headphone} alt="Headphone" />;
+const HeadphoneImage1 = () => {
+  return <img src={headphone1} width="140px" alt="Headphone" />;
+};
+
+const HeadphoneImage2 = () => {
+  return <img src={headphone2} alt="Headphone" />;
 };
 
 const LogoFavicon = () => {
@@ -42,7 +47,8 @@ const XperiaLogo = () => {
 export {
   ConsumerReportsLogo,
   EndagdetLogo,
-  HeadphoneImage,
+  HeadphoneImage1,
+  HeadphoneImage2,
   LogoFavicon,
   PioneerLogo,
   ShoppingCartImage,

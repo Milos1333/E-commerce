@@ -3,7 +3,7 @@ import Button from "../../../components/Button/Button";
 import {
   ConsumerReportsLogo,
   EndagdetLogo,
-  HeadphoneImage,
+  HeadphoneImage1,
   PioneerLogo,
   WiredLogo,
   XperiaLogo,
@@ -14,11 +14,7 @@ const Fresh = () => {
     <div className="fresh-container">
       <div className="fresh-main">
         <div className="fresh-content">
-          <h1>
-            Fresh Beautiful
-            <br />
-            Innovative
-          </h1>
+          <h1>Fresh Beautiful. Innovative.</h1>
           <hr />
           <p>
             Discover unmatched sound quality with our cutting-edge headphones.
@@ -32,7 +28,7 @@ const Fresh = () => {
           />
         </div>
         <div className="fresh-image">
-          <HeadphoneImage />
+          <HeadphoneImage1 />
         </div>
       </div>
       <div className="fresh-brands">
