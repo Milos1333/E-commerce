@@ -1,15 +1,20 @@
 import "../styles/fresh.style.css";
 import Button from "../../../components/Button/Button";
-import {
-  ConsumerReportsLogo,
-  EndagdetLogo,
-  HeadphoneImage1,
-  PioneerLogo,
-  WiredLogo,
-  XperiaLogo,
-} from "../../../assets/index";
+import consumerReportsLogo from "../../../assets/consumerReportsLogo.png";
+import endagdetLogo from "../../../assets/endagdetLogo.png";
+import headphoneImage1 from "../../../assets/headphone1.png";
+import pioneerLogo from "../../../assets/pioneerLogo.png";
+import wiredLogo from "../../../assets/wiredLogo.png";
+import xperiaLogo from "../../../assets/xperiaLogo.png";
 
 const Fresh = () => {
+  const brands = [
+    { image: consumerReportsLogo },
+    { image: endagdetLogo },
+    { image: pioneerLogo },
+    { image: wiredLogo },
+    { image: xperiaLogo },
+  ];
   return (
     <div className="fresh-container">
       <div className="fresh-main">
@@ -28,27 +33,17 @@ const Fresh = () => {
           />
         </div>
         <div className="fresh-image">
-          <HeadphoneImage1 />
+          <img src={headphoneImage1} />
         </div>
       </div>
       <div className="fresh-brands">
-        <ul>
-          <li>
-            <ConsumerReportsLogo />
-          </li>
-          <li>
-            <EndagdetLogo />
-          </li>
-          <li>
-            <PioneerLogo />
-          </li>
-          <li>
-            <WiredLogo />
-          </li>
-          <li>
-            <XperiaLogo />
-          </li>
-        </ul>
+        {brands.map((brand) => (
+          <ul>
+            <li>
+              <img src={brand.image} />
+            </li>
+          </ul>
+        ))}
       </div>
     </div>
   );
