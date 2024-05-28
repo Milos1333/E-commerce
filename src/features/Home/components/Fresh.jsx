@@ -2,10 +2,10 @@ import "../styles/fresh.style.css";
 import Button from "../../../components/Button/Button";
 import consumerReportsLogo from "../../../assets/consumerReportsLogo.png";
 import endagdetLogo from "../../../assets/endagdetLogo.png";
-import headphoneImage1 from "../../../assets/headphone1.png";
 import pioneerLogo from "../../../assets/pioneerLogo.png";
 import wiredLogo from "../../../assets/wiredLogo.png";
 import xperiaLogo from "../../../assets/xperiaLogo.png";
+import { HeadphoneImage1 } from "../../../assets";
 
 const Fresh = () => {
   const brands = [
@@ -33,7 +33,7 @@ const Fresh = () => {
           />
         </div>
         <div className="fresh-image">
-          <img src={headphoneImage1} />
+          <HeadphoneImage1 />
         </div>
       </div>
       <div className="fresh-brands">
