@@ -1,6 +1,10 @@
 .copyright-main-container {
   width: 100%;
-  background-color: rgb(236, 255, 246);
+  background: linear-gradient(
+    to bottom,
+    rgb(236, 255, 246),
+    rgb(255, 255, 255)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +22,11 @@
 
 .copyright-content {
   width: 90%;
-  background-color: rgb(189, 255, 189);
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(210, 255, 234)
+  );
   display: flex;
   align-items: center;
   padding: 70px 50px;
@@ -30,6 +38,10 @@
   padding: 5px 0;
 }
 
+.copyright-container p:last-child {
+  color: black;
+}
+
 .copyright-text {
   display: flex;
   flex-direction: column;
@@ -38,26 +50,24 @@
   width: 70%;
 }
 
-.copyright-text h1 {
-  font-size: 30px;
+.copyright-text h2 {
+  font-size: 35px;
   padding: 0;
   margin: 0;
-  width: 60%;
+  width: 70%;
 }
 
 .copyright-text p {
   padding: 0;
   margin: 0;
   width: 80%;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .copyright-text hr {
-  max-width: 200px;
-  min-width: 100px;
-  width: 100%;
+  width: 60%;
   margin: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   border: none;
   padding: 1px;
 }
@@ -71,4 +81,75 @@
   font-size: 11px;
   font-weight: bold;
   padding: 6px 22px;
+}
+
+@media screen and (max-width: 1000px) {
+  .copyright-text h2 {
+    font-size: 28px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .copyright-image img {
+    width: 200px;
+  }
+
+  .copyright-text h2 {
+    font-size: 23px;
+    width: 60%;
+  }
+
+  .copyright-text {
+    gap: 20px;
+  }
+
+  .copyright-container p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .copyright-text h2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .copyright-content {
+    width: 70%;
+    flex-direction: column;
+    text-align: center;
+    gap: 70px;
+    padding: 40px 30px;
+  }
+
+  .copyright-text {
+    align-items: center;
+    width: 90%;
+  }
+
+  .copyright-container {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .copyright-text p {
+    width: 100%;
+  }
+
+  .copyright-text button {
+    font-size: 9px;
+  }
+
+  .copyright-container p {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .copyright-text h2 {
+    font-size: 20px;
+  }
 }

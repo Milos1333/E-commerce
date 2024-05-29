@@ -8,7 +8,7 @@ const Copyright = () => {
       <div className="copyright-container">
         <div className="copyright-content">
           <div className="copyright-text">
-            <h1>Fresh Beautiful. Innovative.</h1>
+            <h2>Fresh Beautiful. Innovative.</h2>
             <hr />
             <p>
               Discover unmatched sound quality with our cutting-edge headphones.
@@ -17,7 +17,7 @@ const Copyright = () => {
             </p>
             <Button
               buttonText="Order now"
-              backgroundColor="rgb(0, 38, 33)"
+              backgroundColor="black"
               color="white"
             />
           </div>
