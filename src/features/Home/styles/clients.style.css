@@ -48,7 +48,7 @@
 
 .client img:hover {
   transform: scale(1.1);
-  border: 2px solid rgb(255, 90, 90);
+  border: 2px solid rgb(161, 0, 105);
 }
 
 .client-opinion {
@@ -63,7 +63,72 @@
 }
 
 .client h3 {
-  color: rgb(255, 0, 0);
+  color: rgb(161, 0, 105);
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .clients-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .clients-content h2 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .client:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
+
+  .clients-content h2 {
+    padding-bottom: 30px;
+  }
+
+  .client img {
+    width: 80px;
+  }
+
+  .client-opinion {
+    min-height: 50px;
+  }
+
+  .client-opinion p {
+    font-size: 13px;
+  }
+
+  .client h3 {
+    font-size: 15px;
+  }
+
+  .clients-container {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .client:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 70%;
+  }
+
+  .clients-content h2 {
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .clients {
+    justify-items: center;
+  }
+
+  .client {
+    width: 70%;
+  }
 }
