@@ -1,6 +1,5 @@
 import headphone1 from "./headphone1.png";
 import headphone2 from "./headphone2.png";
-import logoFavicon from "./logoFavicon.png";
 import shoppingCart from "./shoppingCart.png";
 import menuIcon from "./menu.png";
 import aboutTeamImg from "./aboutTeamImg.jpg";
@@ -13,10 +12,6 @@ const HeadphoneImage1 = () => {
 
 const HeadphoneImage2 = () => {
   return <img src={headphone2} alt="Headphone" />;
-};
-
-const LogoFavicon = () => {
-  return <img src={logoFavicon} alt="Logo Favicon" />;
 };
 
 const ShoppingCartImage = () => {
@@ -42,7 +37,6 @@ const AboutOurStoryImg = () => {
 export {
   HeadphoneImage1,
   HeadphoneImage2,
-  LogoFavicon,
   ShoppingCartImage,
   MenuImage,
   AboutTeamImg,
