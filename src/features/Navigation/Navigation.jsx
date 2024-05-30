@@ -9,41 +9,47 @@ const Navigation = () => {
   const location = useLocation();
 
   const handleNavigate = () => {
-    navigate("../");
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
   };
 
   const hideShoppingCart = location.pathname !== "/";
 
   return (
-    <div className="navigation-container">
-      <div className="navigation-logo">
-        <EcommerceLogo handleNavigate={handleNavigate} />
+    <div
+      className={`navigation-container ${
+        hideShoppingCart ? "" : "addition-navigation"
+      }`}
+    >
+      <div className="navigation-logo" onClick={handleNavigate}>
+        <EcommerceLogo />
       </div>
-      <div
-        className={`navigation-links ${
-          hideShoppingCart ? "" : "addition-navigation-links"
-        }`}
-      >
+      <div className="navigation-links">
         <div className="navigation-link">
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={handleNavigate}>
+            Home
+          </Link>
           <Link to="/offer">Offer</Link>
           <Link to="/how-to-order">How to order?</Link>
           <Link to="/about-us">About us</Link>
           <Link to="/contact">Contact</Link>
         </div>
-        <div
-          className={`navigation-menu ${
-            hideShoppingCart ? "" : "addition-navigation-menu"
-          }`}
-        >
+      </div>
+      <div className="navigation-icons">
+        <div className="navigation-menu-hamburger">
           <MenuImage />
         </div>
-      </div>
-      {hideShoppingCart && (
-        <div className="shopping-cart-container ">
+        <div
+          className="shopping-cart-container"
+          style={{ visibility: hideShoppingCart ? "visible" : "hidden" }}
+        >
           <ShoppingCart />
+          <span>0</span>
         </div>
-      )}
+      </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const ShoppingCartImage = () => {
 };
 
 const MenuImage = () => {
-  return <img src={menuIcon} alt="Menu Hamburger" width="20px" />;
+  return <img src={menuIcon} alt="Menu Hamburger" width="22px" />;
 };
 
 const AboutTeamImg = () => {
