@@ -1,5 +1,5 @@
 import "./home.style.css";
-import Fresh from "./components/Fresh";
+import Unleash from "./components/Unleash";
 import Presentations from "./components/Presentations";
 import Innovative from "./components/Innovative";
 import Packages from "./components/Packages";
@@ -10,7 +10,7 @@ import Copyright from "./components/Copyright";
 const Home = () => {
   return (
     <div className="home-page">
-      <Fresh />
+      <Unleash />
       <Presentations />
       <Innovative />
       <Packages />
