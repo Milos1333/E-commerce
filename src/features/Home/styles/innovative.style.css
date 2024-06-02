@@ -1,51 +1,121 @@
 .innovative-container {
   width: 100%;
-  height: 100vh;
   background-color: rgb(236, 255, 246);
   display: flex;
-}
-
-.innovative-left {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 60px 0;
 }
 
 .innovative-main {
-  height: 50%;
-  align-self: center;
-  width: 70%;
+  display: flex;
+  width: 34%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
 }
 
-.innovative-main h2 {
-  font-size: 35px;
+.innovative-text h2 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
 }
 
-.innovative-main button {
-  background-color: rgb(0, 38, 33);
-  color: white;
-  font-size: 13px;
-  padding: 8px 30px;
+.innovative-text p {
+  margin: 0;
+  padding: 20px 0 24px 0;
+}
+
+.innovative-text button {
   border-radius: 0;
-  font-weight: bold;
-  margin-top: 20px;
+  font-size: 12px;
+  width: 120px;
 }
 
-.innovative-right {
-  width: 50%;
+.innovative-image {
+  background-color: rgb(199, 255, 223);
+  padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(223, 255, 230);
-  transition: 1s ease-in-out;
+  width: 50%;
+  transition: 0.8s ease-in-out;
 }
 
-.innovative-right img {
-  width: 500px;
-  margin-top: 20px;
-}
-
-.innovative-right:hover {
+.innovative-image:hover {
   background-color: rgb(0, 38, 33);
+}
+
+.innovative-image img {
+  width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .innovative-image img {
+    width: 400px;
+  }
+
+  .innovative-text h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .innovative-text p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .innovative-image img {
+    width: 350px;
+  }
+
+  .innovative-text button {
+    font-size: 11px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .innovative-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .innovative-main {
+    width: 68%;
+    margin: 0;
+  }
+
+  .innovative-image {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .innovative-image img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .innovative-text h2 {
+    font-size: 23px;
+  }
+
+  .innovative-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .innovative-text p {
+    font-size: 13px;
+  }
+
+  .innovative-main {
+    width: 70%;
+  }
 }

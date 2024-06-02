@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0 50px 0;
+  padding: 60px 0px;
 }
 
 .presentations-container {
@@ -16,7 +16,7 @@
 }
 
 .presentations-header {
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 
@@ -31,6 +31,11 @@
 
 .presentations-item {
   width: 230px;
+  transition: transform 0.5s ease;
+}
+
+.presentations-item:hover {
+  transform: scale(1.05);
 }
 
 .presentations-header h2 {
@@ -41,16 +46,6 @@
 
 .presentations-item img {
   width: 50px;
-  filter: contrast(100%);
-  transition: filter 0.3s ease;
-}
-
-.presentations-item img:hover {
-  filter: contrast(50%);
-}
-
-.presentations-header p {
-  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,12 +76,16 @@
 
 @media screen and (max-width: 674px) {
   .presentations-item {
-    padding: 8px 0px;
+    padding: 5px 0px;
     width: 80%;
   }
 
   .presentations-item:nth-child(3) {
     margin-left: 0;
+  }
+
+  .presentations-item img {
+    width: 45px;
   }
 }
 
@@ -105,5 +104,9 @@
 
   .presentations-item img {
     width: 40px;
+  }
+
+  .presentations-main-container {
+    padding-bottom: 30px;
   }
 }

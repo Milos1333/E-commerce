@@ -26,26 +26,28 @@ const Packages = () => {
     },
   ];
   return (
-    <div className="packages-container">
-      <div className="packages-header">
-        <h2>Our Packages</h2>
-      </div>
-      <div className="packages-main">
-        {headphones.map((headphone) => (
-          <div className="package">
-            <img src={headphone.image} width="165px" />
-            <h3>{headphone.title}</h3>
-            <div className="title-headphone">
-              <p>{headphone.description}</p>
+    <div className="packages-main-container">
+      <div className="packages-container">
+        <div className="packages-header">
+          <h2>Our Packages</h2>
+        </div>
+        <div className="packages">
+          {headphones.map((headphone) => (
+            <div className="package">
+              <img src={headphone.image} width="165px" />
+              <h3>{headphone.title}</h3>
+              <div className="title-headphone">
+                <p>{headphone.description}</p>
+              </div>
+              <h2>{headphone.price}</h2>
+              <Button
+                buttonText="Shop now"
+                backgroundColor="rgb(0, 38, 33)"
+                color="white"
+              />
             </div>
-            <h2>{headphone.price}</h2>
-            <Button
-              buttonText="Shop now"
-              backgroundColor="rgb(0, 38, 33)"
-              color="white"
-            />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

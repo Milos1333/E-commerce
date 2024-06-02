@@ -1,117 +1,183 @@
-.packages-container {
-  width: 100%;
-  height: 100vh;
+.packages-main-container {
+  padding: 60px 0;
   background-color: rgb(236, 255, 246);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.packages-header {
-  height: 20%;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.packages-header h2 {
-  padding: 0;
-  margin: 0;
-  font-size: 35px;
+.packages-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
 }
 
-.packages-main {
-  height: 50%;
-  width: 80%;
+.packages-header {
+  padding-bottom: 30px;
+}
+
+.packages-header h2 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.packages {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  align-items: center;
-  align-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   justify-items: center;
 }
 
 .package {
-  width: 230px;
-  padding: 0 15px;
-  background-color: rgb(191, 255, 205);
-  height: 320px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
-  justify-content: end;
+  background-color: rgb(199, 255, 223);
   text-align: center;
-  transition: 0.5s ease;
   position: relative;
+  transition: all 0.5s;
+}
+
+.title-headphone {
+  height: 30%;
+  width: 80%;
+}
+
+.package p {
+  padding: 10px 0;
+  margin: 0;
+  transition: 0.5s ease;
+}
+
+.package h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  transition: 0.5s ease;
+}
+
+.package h2 {
+  padding: 0;
+  margin: 0;
+  transition: 0.5s ease;
+}
+
+.package img {
+  position: absolute;
+  top: -70px;
+}
+
+.package button {
+  margin: 15px 0 25px 0;
+  font-size: 11px;
+  width: 130px;
+  font-weight: bold;
+}
+
+.package:first-child img {
+  width: 200px;
 }
 
 .package:hover {
   background-color: rgb(0, 38, 33);
-  color: white;
   transform: scale(1.03);
+  color: white;
 }
 
-.package button {
-  font-size: 12px;
-  padding: 7px 40px;
-  font-weight: bold;
-  border-radius: 30px;
-  margin-bottom: 30px;
+.package:hover h2,
+.package:hover h3 {
+  color: rgb(0, 255, 132);
 }
 
 .package:hover button {
   background-color: white !important;
   color: black !important;
-  transition: 1s ease;
 }
 
 .package:hover button:hover {
-  background-color: rgb(221, 255, 237) !important;
-  transition: 0.1 ease;
+  background-color: rgb(212, 212, 212) !important;
 }
 
-.package h2 {
-  margin: 0;
-  padding-bottom: 10px;
-  font-size: 30px;
-  transition: 1s ease;
+@media screen and (max-width: 1087px) {
+  .package:nth-child(3) {
+    margin-left: 100%;
+    margin-top: 100px;
+  }
 }
 
-.package:hover h2 {
-  color: rgb(131, 255, 131);
+@media screen and (max-width: 1000px) {
+  .packages-header h2 {
+    font-size: 28px;
+  }
 }
 
-.title-headphone {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+@media screen and (max-width: 900px) {
+  .package p {
+    font-size: 13px;
+  }
+
+  .package img {
+    width: 150px;
+  }
+
+  .package:first-child img {
+    width: 185px;
+  }
+
+  .package h3 {
+    padding-top: 90px;
+  }
+
+  .packages-header {
+    padding: 0;
+  }
 }
 
-.package h3 {
-  padding: 0;
-  margin: 0;
-  transition: 1s ease;
-  font-size: 25px;
+@media screen and (max-width: 724px) {
+  .package:nth-child(3) {
+    margin-left: 0;
+    margin: 0;
+  }
+
+  .packages {
+    gap: 100px;
+  }
+
+  .package button {
+    width: 115px;
+  }
 }
 
-.package:hover h3 {
-  color: rgb(131, 255, 131);
-}
+@media screen and (max-width: 500px) {
+  .packages-header h2 {
+    font-size: 23px;
+  }
 
-.package img {
-  position: absolute;
-  top: -60px;
-}
+  .package p {
+    font-size: 12px;
+  }
 
-.package:first-child img {
-  width: 203px;
-}
+  .package {
+    width: 230px;
+  }
 
-.package p {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+  .package h2 {
+    font-size: 24px;
+  }
+
+  .package button {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .package img {
+    width: 145px;
+  }
+
+  .package:first-child img {
+    width: 180px;
+  }
 }
