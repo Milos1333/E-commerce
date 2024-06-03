@@ -5,6 +5,8 @@ import menuIcon from "./menu.png";
 import aboutTeamImg from "./aboutTeamImg.jpg";
 import aboutOurMissionImg from "./aboutOurMissionImg.jpg";
 import aboutOurStoryImg from "./aboutOurStoryImg.jpg";
+import locationImg from "./location.png";
+import phoneImg from "./phone.png";
 
 const HeadphoneImage1 = () => {
   return <img src={headphone1} alt="Headphone" />;
@@ -34,6 +36,14 @@ const AboutOurStoryImg = () => {
   return <img src={aboutOurStoryImg} alt="Our Story" width="380px" />;
 };
 
+const PhoneIconImg = () => {
+  return <img src={phoneImg} alt="Phone icon" width="30px" />;
+};
+
+const LocationIconImg = () => {
+  return <img src={locationImg} alt="Location icon" width="30px" />;
+};
+
 export {
   HeadphoneImage1,
   HeadphoneImage2,
@@ -42,4 +52,6 @@ export {
   AboutTeamImg,
   AboutOurMissionImg,
   AboutOurStoryImg,
+  PhoneIconImg,
+  LocationIconImg,
 };
