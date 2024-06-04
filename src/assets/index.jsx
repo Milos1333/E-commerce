@@ -7,6 +7,7 @@ import aboutOurMissionImg from "./aboutOurMissionImg.jpg";
 import aboutOurStoryImg from "./aboutOurStoryImg.jpg";
 import locationImg from "./location.png";
 import phoneImg from "./phone.png";
+import star from "./starReview.png";
 
 const HeadphoneImage1 = () => {
   return <img src={headphone1} alt="Headphone" />;
@@ -44,6 +45,18 @@ const LocationIconImg = () => {
   return <img src={locationImg} alt="Location icon" width="30px" />;
 };
 
+const StarsImg = () => {
+  return (
+    <>
+      <img src={star} alt="Stars" />
+      <img src={star} alt="Stars" />
+      <img src={star} alt="Stars" />
+      <img src={star} alt="Stars" />
+      <img src={star} alt="Stars" />
+    </>
+  );
+};
+
 export {
   HeadphoneImage1,
   HeadphoneImage2,
@@ -54,4 +67,5 @@ export {
   AboutOurStoryImg,
   PhoneIconImg,
   LocationIconImg,
+  StarsImg,
 };
