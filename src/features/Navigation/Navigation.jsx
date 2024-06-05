@@ -1,12 +1,15 @@
 import "./navigation.style.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import ShoppingCart from "../../components/ShoppingCart/ShoppingCart";
 import EcommerceLogo from "../../components/EcommerceLogo/EcommerceLogo";
 import { MenuImage } from "../../assets/index";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import ShoppingCartImg from "../../components/ShoppingCart/ShoppingCartImg";
+import { useState } from "react";
 
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isShoppingCartOpen, setIsShoppingCartOpen] = useState(false);
 
   const handleNavigate = () => {
     if (location.pathname === "/") {
@@ -18,12 +21,12 @@ const Navigation = () => {
 
   const hideShoppingCart = location.pathname !== "/";
 
+  const toggleShoppingCart = () => {
+    setIsShoppingCartOpen(!isShoppingCartOpen);
+  };
+
   return (
-    <div
-      className={`navigation-container ${
-        hideShoppingCart ? "" : "addition-navigation"
-      }`}
-    >
+    <div className="navigation-container">
       <div className="navigation-logo" onClick={handleNavigate}>
         <EcommerceLogo />
       </div>
@@ -45,11 +48,13 @@ const Navigation = () => {
         <div
           className="shopping-cart-container"
           style={{ visibility: hideShoppingCart ? "visible" : "hidden" }}
+          onClick={toggleShoppingCart}
         >
-          <ShoppingCart />
+          <ShoppingCartImg />
           <span>0</span>
         </div>
       </div>
+      <ShoppingCart isOpen={isShoppingCartOpen} />
     </div>
   );
 };

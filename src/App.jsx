@@ -5,6 +5,7 @@ import Offer from "./features/Offer/Offer";
 import Home from "./features/Home/Home";
 import About from "./features/About/About";
 import HowOrder from "./features/HowOrder/HowOrder";
+import ShoppingCart from "./features/ShoppingCart/ShoppingCart";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <ShoppingCart />
       </BrowserRouter>
     </>
   );
